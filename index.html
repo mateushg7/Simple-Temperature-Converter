@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<h1>
+  <label>Fahrenheit:</label>
+  <input id="inputFahrenheit" type="number" oninput="temperatureConverter(this.value)"
+    onchange="temperatureConverter(this.value)">
+</h1>
+<p>Celsius: <span id="outputCelsius"></span></p>
+<p>Kelvin: <span id="outputKelvin"></spanid></span></p>
+
+
+<script>
+  function temperatureConverter(valNum) {
+    valNum = parseFloat(valNum);
+    document.getElementById("outputCelsius").innerHTML = (valNum - 32) / 1.8;
+    document.getElementById("outputKelvin").innerHTML = ((valNum - 32) / 1.8) + 273.15;
+  }
+</script>
+
+<style>
+  label {
+    color: rgb(253, 253, 253);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+    display: block;
+    text-transform: none;
+
+
+  }
+
+  h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+
+  }
+
+  p {
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+  }
+
+  body {
+    background-color: black;
+    height: 100%;
+
+  }
+</style>

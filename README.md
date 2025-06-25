@@ -18,7 +18,8 @@ Ferramenta simples que converte entre Celsius, Fahrenheit e Kelvin.
 - Interface responsiva
 
 ## 📸 Preview
-![preview](screenshot.png)
+![Simple Temperature](https://github.com/user-attachments/assets/2f43d579-a0ba-40b5-87c6-6b71c0989464)
+
 
 ## ▶️ Como executar localmente
 ```bash
